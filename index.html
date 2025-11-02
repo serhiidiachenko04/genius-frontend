@@ -1,16 +1,9 @@
-<!-- Userful links -->
-<!-- 
-Random images:
-https://picsum.photos/
-
-Check if a tag can be included in another tag
-https://caninclude.onrender.com/
- -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Modern bakery</title>
   </head>
   <body>
@@ -21,30 +14,32 @@ https://caninclude.onrender.com/
           <img src="./images/logo.svg" alt="Modern bakery logo" />
         </a>
         <ul>
-          <li><a href="#">Franchise</a></li>
-          <li><a href="#">Our traditions</a></li>
-          <li><a href="#">Formats</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a class="link" href="#traditions-section">Our traditions</a></li>
+          <li>
+            <a class="link" href="#chief-cookers-section">Chief-cookers</a>
+          </li>
+          <li><a class="link" href="#formats-section">Formats</a></li>
+          <li><a class="link" href="#contacts-section">Contacts</a></li>
         </ul>
       </nav>
       <!-- ask for call -->
-      <button type="button">Order a call</button>
+      <button class="button" type="button">Order a call</button>
     </header>
     <main>
       <!-- Section alwasy must have a header -->
       <section>
         <!-- Modern bakery -->
         <!-- h1 header must be only one on the page-->
-        <h1>Modern bakery</h1>
+        <h1 class="hero-title"><span class="accent">Modern</span> bakery</h1>
       </section>
-      <section>
+      <section id="traditions-section">
         <!-- New format of traditions -->
-        <ul>
+        <ul class="advantages-list">
           <li>High demand in the market</li>
           <li>Affordable formats</li>
           <li>Experienced management team</li>
         </ul>
-        <h2>New format of traditions</h2>
+        <h2 class="section-title">New format of traditions</h2>
         <p>
           <span> shop bakery </span>
           — This is a bakery that took all the best and preserved the taste of
@@ -60,9 +55,11 @@ https://caninclude.onrender.com/
           alt="Baker man looking at the bread and smiling"
         />
       </section>
-      <section>
+      <section id="chief-cookers-section">
         <!-- Our best chief-cookers -->
-        <h2>Our best chief-cookers</h2>
+        <h2 class="section-title">
+          Our best <span class="accent">chief-cookers</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -88,9 +85,9 @@ https://caninclude.onrender.com/
           </li>
         </ul>
       </section>
-      <section>
+      <section id="formats-section">
         <!-- Formats -->
-        <h2>Formats</h2>
+        <h2 class="section-title">Formats</h2>
         <ul>
           <li>
             <article>
@@ -109,9 +106,17 @@ https://caninclude.onrender.com/
           </li>
         </ul>
       </section>
-      <section>
+      <section id="contacts-section">
         <!-- Join the bakery network-->
-        <h2>Join the bakery network</h2>
+        <h2 class="section-title">Join the bakery network</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2816.4914277619655!2d30.51337537665566!3d50.42633758909959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf3ea59063c9%3A0x4410d93e5adaeb92!2sVelyka%20Vasylkivska%20St%2C%20100%2C%20Kyiv%2C%2003150!5e1!3m2!1sen!2sua!4v1761940724608!5m2!1sen!2sua"
+          width="600"
+          height="600"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
     <footer>
@@ -120,10 +125,10 @@ https://caninclude.onrender.com/
       </a>
       <nav>
         <ul>
-          <li><a href="#">Franchise</a></li>
-          <li><a href="#">Our traditions</a></li>
-          <li><a href="#">Formats</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a href="#traditions-section">Our traditions</a></li>
+          <li><a href="#chief-cookers-section">Chief-cookers</a></li>
+          <li><a href="#formats-section">Formats</a></li>
+          <li><a href="#contacts-section">Contacts</a></li>
         </ul>
       </nav>
       <address>
@@ -147,7 +152,7 @@ https://caninclude.onrender.com/
       </a>
       <a href="#" target="_blank">Privacy Policy</a>
       <!-- copyright -->
-      <p>© copyright 2025 All data reserved</p>
+      <p>&copy; copyright 2025 All data reserved</p>
     </footer>
   </body>
 </html>
