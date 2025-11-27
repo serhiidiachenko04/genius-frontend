@@ -3,156 +3,247 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
+      rel="stylesheet"
+    /> -->
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Modern bakery</title>
   </head>
   <body>
     <header>
-      <nav>
-        <!-- logo and navigation -->
-        <a href="/">
-          <img src="./images/logo.svg" alt="Modern bakery logo" />
-        </a>
-        <ul>
-          <li><a class="link" href="#traditions-section">Our traditions</a></li>
-          <li>
-            <a class="link" href="#chief-cookers-section">Chief-cookers</a>
-          </li>
-          <li><a class="link" href="#formats-section">Formats</a></li>
-          <li><a class="link" href="#contacts-section">Contacts</a></li>
-        </ul>
-      </nav>
-      <!-- ask for call -->
-      <button class="button" type="button">Order a call</button>
+      <div class="container">
+        <div class="header-container">
+          <nav class="header-nav">
+            <!-- logo and navigation -->
+            <a href="/">
+              <img src="./images/logo.svg" alt="Modern bakery logo" />
+            </a>
+            <ul class="header-menu">
+              <li>
+                <a class="link" href="#traditions-section">Our traditions</a>
+              </li>
+              <li>
+                <a class="link" href="#chief-cookers-section">Chief-cookers</a>
+              </li>
+              <li><a class="link" href="#formats-section">Formats</a></li>
+              <li><a class="link" href="#contacts-section">Contacts</a></li>
+            </ul>
+          </nav>
+          <!-- ask for call -->
+          <button class="button" type="button">Order a call</button>
+        </div>
+      </div>
     </header>
     <main>
       <!-- Section alwasy must have a header -->
-      <section>
+      <section class="hero-section">
         <!-- Modern bakery -->
         <!-- h1 header must be only one on the page-->
-        <h1 class="hero-title"><span class="accent">Modern</span> bakery</h1>
+        <div class="container">
+          <h1 class="hero-title"><span class="accent">Modern</span> bakery</h1>
+        </div>
       </section>
-      <section id="traditions-section">
+      <section class="advantages-section">
+        <div class="container">
+          <h2 class="visually-hidden">Our advantages</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item">High demand in the market</li>
+            <li class="advantages-item">Affordable formats</li>
+            <li class="advantages-item">Experienced management team</li>
+          </ul>
+        </div>
+      </section>
+      <section class="traditions-section section" id="traditions-section">
         <!-- New format of traditions -->
-        <ul class="advantages-list">
-          <li>High demand in the market</li>
-          <li>Affordable formats</li>
-          <li>Experienced management team</li>
-        </ul>
-        <h2 class="section-title">New format of traditions</h2>
-        <p>
-          <span> shop bakery </span>
-          — This is a bakery that took all the best and preserved the taste of
-          traditional pastries and the naturalness of the products.
-        </p>
-        <p>
-          We work like the most famous networks —
-          <span> 5 minutes and the order is ready </span>
-          . And our bakeries have stylish design and high quality service!
-        </p>
-        <img
-          src="./images/baker-man.jpg"
-          alt="Baker man looking at the bread and smiling"
-        />
+
+        <div class="container">
+          <div class="traditions-container">
+            <div class="traditions-content">
+              <h2 class="traditions-title section-title">
+                New format of traditions
+              </h2>
+              <p class="traditions-text">
+                <span class="brand uppercase"> shop bakery </span>
+                — This is a bakery that took all the best and preserved the
+                taste of traditional pastries and the naturalness of the
+                products.
+              </p>
+              <p class="traditions-text traditions-text-limited">
+                We work like the most famous networks —
+                <span class="brand uppercase">
+                  5 minutes and the order is ready.</span
+                >
+                And our bakeries have stylish design and high quality service!
+              </p>
+            </div>
+
+            <img
+              src="./images/baker-man.jpg"
+              alt="Baker man looking at the bread and smiling"
+            />
+          </div>
+        </div>
       </section>
-      <section id="chief-cookers-section">
+      <section class="section" id="chief-cookers-section">
         <!-- Our best chief-cookers -->
-        <h2 class="section-title">
-          Our best <span class="accent">chief-cookers</span>
-        </h2>
-        <ul>
-          <li>
-            <article>
-              <h3>Nastya</h3>
-              <p>Hi, I'm Nastya!</p>
-              <p>
-                For 10 years now, I have been bringing interesting and delicious
-                ideas to life.
-              </p>
-              <p>I will bake the most delicious products for you!</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3>Vlad</h3>
-              <p>Hi, I'm Vlad!</p>
-              <p>
-                I have been a pastry chef for 18 years. SHOP BEKERY is our love,
-                which we share with you every time through our pastries!
-              </p>
-              <p>I will make a unique filling for you for any taste!</p>
-            </article>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="chefs-title section-title centered">
+            Our best <span class="accent">chief-cookers</span>
+          </h2>
+          <ul>
+            <li>
+              <article>
+                <img
+                  class="chef-photo"
+                  src="./images/nastya-chef.jpg"
+                  alt="Nastya chef"
+                />
+                <h3 class="chef-title">Nastya</h3>
+                <p>Hi, I'm Nastya!</p>
+                <p>
+                  For 10 years now, I have been bringing interesting and
+                  delicious ideas to life.
+                </p>
+                <p>I will bake the most delicious products for you!</p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <img
+                  class="chef-photo"
+                  src="./images/vlad-chef.jpg"
+                  alt="Vlad chef"
+                />
+                <h3 class="chef-title">Vlad</h3>
+                <p>Hi, I'm Vlad!</p>
+                <p>
+                  I have been a pastry chef for 18 years. SHOP BEKERY is our
+                  love, which we share with you every time through our pastries!
+                </p>
+                <p>I will make a unique filling for you for any taste!</p>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section id="formats-section">
+      <section class="section" id="formats-section">
         <!-- Formats -->
-        <h2 class="section-title">Formats</h2>
-        <ul>
-          <li>
-            <article>
-              <h3>Walrus</h3>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3>Horseshoe</h3>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3>Handlebar</h3>
-            </article>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="formats-title section-title centered">Formats</h2>
+          <ul class="formats-list">
+            <li class="formats-item">
+              <article class="format-card">
+                <h3 class="format-title">Walrus</h3>
+                <div class="format-text">
+                  <p>Area: up to 120 m2</p>
+                  <p>Menu: extended menu</p>
+                  <p>
+                    Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2
+                    waiters-handymen
+                  </p>
+                  <p>Seats: yes</p>
+                </div>
+              </article>
+            </li>
+            <li class="formats-item">
+              <article class="format-card">
+                <h3 class="format-title">Horseshoe</h3>
+                <div class="format-text">
+                  <p>Area: up to 120 m2</p>
+                  <p>Menu: extended menu</p>
+                  <p>
+                    Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2
+                    waiters-handymen
+                  </p>
+                  <p>Seats: yes</p>
+                </div>
+              </article>
+            </li>
+            <li class="formats-item">
+              <article class="format-card">
+                <h3 class="format-title">Handlebar</h3>
+                <div class="format-text">
+                  <p>Area: up to 120 m2</p>
+                  <p>Menu: extended menu</p>
+                  <p>
+                    Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2
+                    waiters-handymen
+                  </p>
+                  <p>Seats: yes</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section id="contacts-section">
+      <section class="section" id="contacts-section">
         <!-- Join the bakery network-->
-        <h2 class="section-title">Join the bakery network</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2816.4914277619655!2d30.51337537665566!3d50.42633758909959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf3ea59063c9%3A0x4410d93e5adaeb92!2sVelyka%20Vasylkivska%20St%2C%20100%2C%20Kyiv%2C%2003150!5e1!3m2!1sen!2sua!4v1761940724608!5m2!1sen!2sua"
-          width="600"
-          height="600"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div class="container">
+          <h2 class="contacts-title section-title">Join the bakery network</h2>
+          <p>Fill out the form so we can contact you!</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2816.4914277619655!2d30.51337537665566!3d50.42633758909959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf3ea59063c9%3A0x4410d93e5adaeb92!2sVelyka%20Vasylkivska%20St%2C%20100%2C%20Kyiv%2C%2003150!5e1!3m2!1sen!2sua!4v1761940724608!5m2!1sen!2sua"
+            width="600"
+            height="600"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
     </main>
-    <footer>
-      <a href="/">
-        <img src="./images/logo.svg" alt="Modern bakery logo" />
-      </a>
-      <nav>
-        <ul>
-          <li><a href="#traditions-section">Our traditions</a></li>
-          <li><a href="#chief-cookers-section">Chief-cookers</a></li>
-          <li><a href="#formats-section">Formats</a></li>
-          <li><a href="#contacts-section">Contacts</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul>
-          <li><a href="tel:+380960000007">+38 (096) 000 00 07</a></li>
-          <li>
-            <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
-          </li>
-          <li>
-            <a href="https://maps.app.goo.gl/avyWjptYQrEUq4qE7" target="_blank"
-              >Kyiv, st. Velyka Vasylkivska, 100
-            </a>
-          </li>
-        </ul>
-      </address>
-      <a href="#">
-        <!-- Facebook -->
-      </a>
-      <a href="#">
-        <!-- Instagram -->
-      </a>
-      <a href="#" target="_blank">Privacy Policy</a>
-      <!-- copyright -->
-      <p>&copy; copyright 2025 All data reserved</p>
+    <footer class="footer">
+      <div class="container">
+        <a href="/">
+          <img src="./images/logo.svg" alt="Modern bakery logo" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a class="link" href="#traditions-section">Our traditions</a>
+            </li>
+            <li>
+              <a class="link" href="#chief-cookers-section">Chief-cookers</a>
+            </li>
+            <li><a class="link" href="#formats-section">Formats</a></li>
+            <li><a class="link" href="#contacts-section">Contacts</a></li>
+          </ul>
+        </nav>
+        <address>
+          <ul>
+            <li>
+              <a class="address-link" href="tel:+380960000007"
+                >+38 (096) 000 00 07</a
+              >
+            </li>
+            <li>
+              <a class="address-link" href="mailto:shopbakery@gmail.com"
+                >shopbakery@gmail.com</a
+              >
+            </li>
+            <li>
+              <a
+                class="address-link"
+                href="https://maps.app.goo.gl/avyWjptYQrEUq4qE7"
+                target="_blank"
+                >Kyiv, st. Velyka Vasylkivska, 100
+              </a>
+            </li>
+          </ul>
+        </address>
+        <a href="#">
+          <!-- Facebook -->
+        </a>
+        <a href="#">
+          <!-- Instagram -->
+        </a>
+        <a class="address-link" href="#" target="_blank">Privacy Policy</a>
+        <!-- copyright -->
+        <p class="address-copyright">&copy; copyright 2025 All data reserved</p>
+      </div>
     </footer>
   </body>
 </html>
