@@ -13,7 +13,7 @@
     <title>Modern bakery</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header-container">
           <nav class="header-nav">
@@ -33,7 +33,9 @@
             </ul>
           </nav>
           <!-- ask for call -->
-          <button class="button" type="button">Order a call</button>
+          <button class="button modal-btn-open" type="button">
+            Order a call
+          </button>
         </div>
       </div>
     </header>
@@ -87,43 +89,52 @@
           </div>
         </div>
       </section>
-      <section class="section" id="chief-cookers-section">
+      <section class="section" id="chefs-section">
         <!-- Our best chief-cookers -->
         <div class="container">
           <h2 class="chefs-title section-title centered">
-            Our best <span class="accent">chief-cookers</span>
+            Our best <br /><span class="accent">chief-cookers</span>
           </h2>
-          <ul>
-            <li>
-              <article>
+          <ul class="chefs-list">
+            <li class="chefs-item">
+              <article class="chef-card">
                 <img
                   class="chef-photo"
                   src="./images/nastya-chef.jpg"
                   alt="Nastya chef"
                 />
-                <h3 class="chef-title">Nastya</h3>
-                <p>Hi, I'm Nastya!</p>
-                <p>
-                  For 10 years now, I have been bringing interesting and
-                  delicious ideas to life.
-                </p>
-                <p>I will bake the most delicious products for you!</p>
+                <div>
+                  <h3 class="chef-title">Nastya</h3>
+                  <div class="chef-text">
+                    <p>Hi, I'm Nastya!</p>
+                    <p>
+                      For 10 years now, I have been bringing interesting and
+                      delicious ideas to life.
+                    </p>
+                    <p>I will bake the most delicious products for you!</p>
+                  </div>
+                </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="chefs-item">
+              <article class="chef-card">
                 <img
                   class="chef-photo"
                   src="./images/vlad-chef.jpg"
                   alt="Vlad chef"
                 />
-                <h3 class="chef-title">Vlad</h3>
-                <p>Hi, I'm Vlad!</p>
-                <p>
-                  I have been a pastry chef for 18 years. SHOP BEKERY is our
-                  love, which we share with you every time through our pastries!
-                </p>
-                <p>I will make a unique filling for you for any taste!</p>
+                <div>
+                  <h3 class="chef-title">Vlad</h3>
+                  <div class="chef-text">
+                    <p>Hi, I'm Vlad!</p>
+                    <p>
+                      I have been a pastry chef for 18 years. SHOP BEKERY is our
+                      love, which we share with you every time through our
+                      pastries!
+                    </p>
+                    <p>I will make a unique filling for you for any taste!</p>
+                  </div>
+                </div>
               </article>
             </li>
           </ul>
@@ -133,117 +144,163 @@
         <!-- Formats -->
         <div class="container">
           <h2 class="formats-title section-title centered">Formats</h2>
-          <ul class="formats-list">
-            <li class="formats-item">
-              <article class="format-card">
-                <h3 class="format-title">Walrus</h3>
-                <div class="format-text">
-                  <p>Area: up to 120 m2</p>
-                  <p>Menu: extended menu</p>
-                  <p>
-                    Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2
-                    waiters-handymen
-                  </p>
-                  <p>Seats: yes</p>
-                </div>
-              </article>
-            </li>
-            <li class="formats-item">
-              <article class="format-card">
-                <h3 class="format-title">Horseshoe</h3>
-                <div class="format-text">
-                  <p>Area: up to 120 m2</p>
-                  <p>Menu: extended menu</p>
-                  <p>
-                    Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2
-                    waiters-handymen
-                  </p>
-                  <p>Seats: yes</p>
-                </div>
-              </article>
-            </li>
-            <li class="formats-item">
-              <article class="format-card">
-                <h3 class="format-title">Handlebar</h3>
-                <div class="format-text">
-                  <p>Area: up to 120 m2</p>
-                  <p>Menu: extended menu</p>
-                  <p>
-                    Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2
-                    waiters-handymen
-                  </p>
-                  <p>Seats: yes</p>
-                </div>
-              </article>
-            </li>
-          </ul>
+          <div class="formats-container">
+            <button class="carousel-button" type="button">
+              <svg height="16" width="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <ul class="formats-list">
+              <li class="formats-item">
+                <article class="format-card">
+                  <h3 class="format-title">Walrus</h3>
+                  <div class="format-text">
+                    <p>Area: up to 120 m2</p>
+                    <p>Menu: extended menu</p>
+                    <p>
+                      Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2
+                      waiters-handymen
+                    </p>
+                    <p>Seats: yes</p>
+                  </div>
+                </article>
+              </li>
+              <li class="formats-item">
+                <article class="format-card">
+                  <h3 class="format-title">Horseshoe</h3>
+                  <div class="format-text">
+                    <p>Area: up to 120 m2</p>
+                    <p>Menu: extended menu</p>
+                    <p>
+                      Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2
+                      waiters-handymen
+                    </p>
+                    <p>Seats: yes</p>
+                  </div>
+                </article>
+              </li>
+              <li class="formats-item">
+                <article class="format-card">
+                  <h3 class="format-title">Handlebar</h3>
+                  <div class="format-text">
+                    <p>Area: up to 120 m2</p>
+                    <p>Menu: extended menu</p>
+                    <p>
+                      Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2
+                      waiters-handymen
+                    </p>
+                    <p>Seats: yes</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="carousel-button next" type="button">
+              <svg height="16" width="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
-      <section class="section" id="contacts-section">
+      <section class="contacts-section section" id="contacts-section">
         <!-- Join the bakery network-->
         <div class="container">
-          <h2 class="contacts-title section-title">Join the bakery network</h2>
-          <p>Fill out the form so we can contact you!</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2816.4914277619655!2d30.51337537665566!3d50.42633758909959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf3ea59063c9%3A0x4410d93e5adaeb92!2sVelyka%20Vasylkivska%20St%2C%20100%2C%20Kyiv%2C%2003150!5e1!3m2!1sen!2sua!4v1761940724608!5m2!1sen!2sua"
-            width="600"
-            height="600"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="contact-container">
+            <div class="contact-form">
+              <h2 class="contacts-title section-title">
+                Join the bakery network
+              </h2>
+              <p>Fill out the form so we can contact you!</p>
+            </div>
+            <iframe
+              class="contact-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2816.4914277619655!2d30.51337537665566!3d50.42633758909959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf3ea59063c9%3A0x4410d93e5adaeb92!2sVelyka%20Vasylkivska%20St%2C%20100%2C%20Kyiv%2C%2003150!5e1!3m2!1sen!2sua!4v1761940724608!5m2!1sen!2sua"
+              width="600"
+              height="600"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <a href="/">
-          <img src="./images/logo.svg" alt="Modern bakery logo" />
-        </a>
-        <nav>
-          <ul>
-            <li>
-              <a class="link" href="#traditions-section">Our traditions</a>
-            </li>
-            <li>
-              <a class="link" href="#chief-cookers-section">Chief-cookers</a>
-            </li>
-            <li><a class="link" href="#formats-section">Formats</a></li>
-            <li><a class="link" href="#contacts-section">Contacts</a></li>
-          </ul>
-        </nav>
-        <address>
-          <ul>
-            <li>
-              <a class="address-link" href="tel:+380960000007"
-                >+38 (096) 000 00 07</a
-              >
-            </li>
-            <li>
-              <a class="address-link" href="mailto:shopbakery@gmail.com"
-                >shopbakery@gmail.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="address-link"
-                href="https://maps.app.goo.gl/avyWjptYQrEUq4qE7"
-                target="_blank"
-                >Kyiv, st. Velyka Vasylkivska, 100
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <div class="footer-logo">
+              <a href="/">
+                <img src="./images/logo.svg" alt="Modern bakery logo" />
               </a>
-            </li>
-          </ul>
-        </address>
-        <a href="#">
-          <!-- Facebook -->
-        </a>
-        <a href="#">
-          <!-- Instagram -->
-        </a>
-        <a class="address-link" href="#" target="_blank">Privacy Policy</a>
-        <!-- copyright -->
-        <p class="address-copyright">&copy; copyright 2025 All data reserved</p>
+            </div>
+            <ul class="footer-menu">
+              <li>
+                <a class="link" href="#traditions-section">Our traditions</a>
+              </li>
+              <li>
+                <a class="link" href="#chief-cookers-section">Chief-cookers</a>
+              </li>
+              <li><a class="link" href="#formats-section">Formats</a></li>
+              <li><a class="link" href="#contacts-section">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="footer-address">
+            <ul class="address-list">
+              <li>
+                <a class="address-link" href="tel:+380960000007"
+                  >+38 (096) 000 00 07</a
+                >
+              </li>
+              <li>
+                <a class="address-link" href="mailto:shopbakery@gmail.com"
+                  >shopbakery@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="address-link"
+                  href="https://maps.app.goo.gl/avyWjptYQrEUq4qE7"
+                  target="_blank"
+                  >Kyiv, st. Velyka Vasylkivska, 100
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- Facebook -->
+                  <svg class="address-icon" height="32" width="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- Instagram -->
+                  <svg class="address-icon" height="32" width="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="address-info">
+              <a class="address-link" href="#" target="_blank"
+                >Privacy Policy</a
+              >
+              <!-- copyright -->
+              <p class="address-copyright">
+                &copy; copyright 2025 All data reserved
+              </p>
+            </div>
+          </address>
+        </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-btn-close" type="button"></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
