@@ -118,6 +118,13 @@ address {
   color: var(--color-brand-normal);
 }
 
+.button:disabled {
+  color: gray;
+  background-color: lightgray;
+  border-color: currentColor;
+  cursor: not-allowed;
+}
+
 .link {
   color: var(--color-primary-light);
   text-decoration: none;
@@ -495,13 +502,82 @@ address {
   max-width: 880px;
   height: 100%;
   max-height: 880px;
+  padding: 128px;
   border-radius: 32px;
   background-color: var(--color-primary-light);
   position: relative;
+  overflow-y: auto;
 }
 
 .modal-btn-close {
   position: absolute;
   top: 40px;
   right: 40px;
+}
+
+/* Form */
+
+.form-field {
+  /* position: relative; */
+  margin-bottom: 32px;
+}
+
+/* .form-label {
+  position: absolute;
+  top: 16px;
+  left: 42px;
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--color-secondary-dark);
+  transition: transform 0.3s;
+} */
+
+/* .form-field:focus-within .form-label {
+  transform: translate(-36px, -40px);
+} */
+
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--color-secondary-dark);
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input:focus {
+  border-color: var(--color-brand-normal);
+  outline: none;
+}
+
+.form-input:focus::placeholder {
+  border-color: lightgray;
+}
+
+.form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--color-secondary-dark);
+}
+
+.form-input:focus::placeholder {
+  color: var(--color-primary-dark);
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.form-terms {
+  font-style: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  text-align: center;
+}
+
+.form-terms-link {
+  color: var(--color-primary-dark);
+  text-underline-offset: 2px;
 }
