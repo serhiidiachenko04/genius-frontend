@@ -1,0 +1,26 @@
+  
+  
+  @import '../utils/mixins';
+
+  .section {
+    margin: 48px 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }  
+
+  .circle {
+    @include circle(100px, 100px, red);
+  }  
+  
+  .section-title.centered {
+    text-align: center;
+  }
+  
+  .section-title .accent {
+    color: var(--color-brand-dark);
+  }    
