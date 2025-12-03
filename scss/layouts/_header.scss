@@ -3,24 +3,27 @@
     top: 32px;
     left: 0;
     width: 100%;
+
+    &__container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    &__nav {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      gap: 40px;
+    }
+    
+    &__menu {
+      display: flex;
+      gap: 64px;
+      flex-grow: 1;
+      justify-content: center;
+    }
   }
   
-  .header-container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
+
   
-  .header-nav {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    gap: 40px;
-  }
-  
-  .header-menu {
-    display: flex;
-    gap: 64px;
-    flex-grow: 1;
-    justify-content: center;
-  }
